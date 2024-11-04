@@ -32,9 +32,6 @@ export const getEmpresas = async (req, res) => {
 
 };
 
-
-
-
 export const createEmpresa = async (req, res) => {
     try {
         const { nome, imagem } = req.body;
