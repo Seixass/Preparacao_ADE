@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 conn
-  .sync()
+  .sync()//{force: true}
   .then()
   .catch(() => console.error(error));
 
